@@ -1,0 +1,62 @@
+/* Java Programming
+ch 2 lesson 2
+examples
+trevor childs
+9/20
+*/
+
+//code statements
+/*
+a piece of code that performs some specific action and ends with a semicolon
+radius = 1;
+
+radius = 1; diameter = 2 * radius;
+
+radius = 1;
+diameter = 2 * radius;
+
+*/
+
+class Ch2exe{
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.jpg image file
+.mp3 audio file
+.img
+.wav
+.exe
+.svg
+.ico
+.gif
+.py
+.cpp
+.cs
+.bash
+.java source file
+.class compiled code
+*/
