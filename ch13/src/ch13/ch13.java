@@ -10,7 +10,7 @@ import javax.swing.*;
 import javax.swing.event.AncestorListener;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-
+		
 public class ch13 implements ActionListener,ChangeListener{//adding action listemer for the buttons
 		JFrame frame = new JFrame(); //creating a frame object
 		String result;
@@ -73,7 +73,7 @@ public class ch13 implements ActionListener,ChangeListener{//adding action liste
 		
 		button = new JButton("Done");
 		button.addActionListener(this);
-	
+		
 		
 		contentPane.add(new JLabel("Game"));
 		contentPane.add(firstName);
@@ -96,15 +96,15 @@ public class ch13 implements ActionListener,ChangeListener{//adding action liste
 		
 		
 		frame.setVisible(true);
-
-	
-	}
-
+		
+		
+	}	
+		
 	public static void main(String[] args) {
 		new ch13();
 		
-	}
-
+	}	
+		
 	@Override
 	public void actionPerformed(ActionEvent e) { //using the e parameter
 		Object control = e.getSource();
@@ -124,12 +124,12 @@ public class ch13 implements ActionListener,ChangeListener{//adding action liste
 		
 		JOptionPane messagebox = new JOptionPane();
 		String title = messagebox.showInputDialog(frame,"Set your title.","Title Setter",JOptionPane.WARNING_MESSAGE);
-
+		
 		JOptionPane.showMessageDialog(null,"Your title is "+title);
 		frame.setTitle(title);
 		}
-	}
-
+	}	
+		
 	@Override
 	public void stateChanged(ChangeEvent e) {
 		int userAge = (Integer) ageSpinner.getValue(); //uses .getvalue to get the value of the spinner input
@@ -145,6 +145,7 @@ public class ch13 implements ActionListener,ChangeListener{//adding action liste
 			return;
 		}
 		
-	}
-
-}
+	}	
+		
+}		
+		

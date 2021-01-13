@@ -7,6 +7,7 @@ import java.awt.*;
 public class frames {
 	JFrame myFrame;
 	JPanel contentPane;
+	int number;
 	public frames() {
 		myFrame = new JFrame(); //creates JFrame window
 		contentPane = new JPanel();//creates a new content pane
@@ -15,6 +16,7 @@ public class frames {
 		myFrame.setTitle("");
 		myFrame.setSize(300,200);
 		myFrame.setLocation(0,0);
+		
 		
 		GridLayout grid = new GridLayout(2,2);
 		myFrame.setLayout(grid);

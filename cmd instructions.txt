@@ -1,0 +1,11 @@
+cd Desktop
+cd Java 2020 6_7 Projects
+
+javac "file name"
+
+java "file name"
+
+git status
+git add .
+git commit -m"dsadasa"
+git push
