@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<span class="s4">&lt;!--&lt;androidx.constraintlayout.widget.ConstraintLayout xmlns:android=&quot;https://schemas.android.com/apk/res/android&quot; 
+ 
+    xmlns:tools=&quot;http://schemas.android.com/tools&quot; 
+    android:layout_height=&quot;match_parent&quot; 
+    android:layout_width=&quot;match_parent&quot; 
+    tools:context=&quot;.MainActivity&quot; /&gt; 
+    --&gt;</span>
+<span class="s0">&lt;LinearLayout</span>
+    <span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+    <span class="s1">android:padding</span><span class="s2">=&quot;16dp&quot;</span>
+    <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span>
+    <span class="s1">tools:context</span><span class="s2">=&quot;com.example.beeradviser.MainActivity&quot;</span><span class="s0">&gt;</span>
+
+    <span class="s0">&lt;Spinner</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/color&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:layout_margin</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:layout_marginTop</span><span class="s2">=&quot;40dp&quot;</span>
+        <span class="s1">android:entries</span><span class="s2">=&quot;@array/type_array&quot;</span>
+        <span class="s1">android:rotationY</span><span class="s2">=&quot;0&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;Button</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/submitbutton&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:layout_gravity</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:layout_margin</span><span class="s2">=&quot;16dp&quot;</span>
+        <span class="s1">android:onClick</span><span class="s2">=&quot;onClick_findDrink&quot;</span>
+        <span class="s1">android:rotation</span><span class="s2">=&quot;-360&quot;</span>
+        <span class="s1">android:rotationX</span><span class="s2">=&quot;-360&quot;</span>
+        <span class="s1">android:rotationY</span><span class="s2">=&quot;-360&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/find_drink&quot; </span><span class="s0">/&gt;</span>
+
+    <span class="s0">&lt;TextView</span>
+        <span class="s1">android:id</span><span class="s2">=&quot;@+id/beerview&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+        <span class="s1">android:rotationX</span><span class="s2">=&quot;-360&quot;</span>
+        <span class="s1">android:rotationY</span><span class="s2">=&quot;-360&quot;</span>
+        <span class="s1">android:text</span><span class="s2">=&quot;@string/brands&quot;</span>
+        <span class="s1">android:textAlignment</span><span class="s2">=&quot;center&quot;</span>
+        <span class="s1">android:textSize</span><span class="s2">=&quot;30sp&quot; </span><span class="s0">/&gt;</span>
+
+
+<span class="s0">&lt;/LinearLayout&gt;</span>
+</pre>
+</body>
+</html>

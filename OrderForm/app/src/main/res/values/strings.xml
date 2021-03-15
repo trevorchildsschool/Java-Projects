@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OrderForm</string>
+    <string-array name="Coffee">
+        <item>Cappuccino</item>
+        <item>Latte</item>
+        <item>Flat White</item>
+        <item>Irish Coffee</item>
+    </string-array>
+    
+    
+</resources>

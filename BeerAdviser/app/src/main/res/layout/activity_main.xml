@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="https://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity" />
+    -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.beeradviser.MainActivity">
+
+    <Spinner
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/type_array"
+        android:rotationY="0"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:onClick="onClick_findDrink"
+        android:rotation="-360"
+        android:rotationX="-360"
+        android:rotationY="-360"
+        android:text="@string/find_drink" />
+
+    <TextView
+        android:id="@+id/beerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rotationX="-360"
+        android:rotationY="-360"
+        android:text="@string/brands"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

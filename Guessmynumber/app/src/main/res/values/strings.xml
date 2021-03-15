@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Guess my number</string>
+    <string name="welcometxt">Welcome to the guess my number game</string>
+    <string name="instructions">Pick a number between 1 and 10</string>
+    <string name="correct">You guessed it correctly!</string>
+    <string name="wrong">You guessed it incorrectly</string>
+    <string name="high">Guess higher</string>
+    <string name="low">Guess lower</string>
+
+    <string name="dev">Trevor Childs</string>
+    <string name="company">Tooele County School District</string>
+    <string name="contact">trevorchildschool@gmail.com</string>
+    <string name="version">0.0.1</string>
+
+
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Drink Adviser</string> <!-- title -->
+    <string name="find_drink">Find Drink</string> <!--find drink button -->
+    <string name="brands">No Drink Selected</string> <!-- brands of drinks -->
+    <string name="name">Trevor Childs</string> <!-- lead developer -->
+    <string name="copyright">1/25/2021</string> <!-- copyright year -->
+    <string name="company">Tooele School District</string> <!-- company or employer -->
+    <string name="graphic_artist">Graphic Designer</string> <!-- graphic artists -->
+    <string name="version_number">0.0.1</string> <!-- version number -->
+    <string name="special_thanks">name</string> <!-- special thanks to -->
+    <string name="languages">English</string> <!-- languages -->
+    <string name="Developers">Trevor Childs</string> <!-- different developers -->
+    <string-array name="type_array">
+        <item>Clear</item>
+        <item>Dark Cola</item>
+        <item>Punch</item>
+        <item>Diet</item>
+        <item>Zero Sugar</item>
+        <item>Energy Drinks</item>
+        <item>Tea</item>
+        <item>Coffee</item>
+
+    </string-array>
+
+</resources>
