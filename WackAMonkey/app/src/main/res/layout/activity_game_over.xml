@@ -26,12 +26,20 @@
         android:gravity="center"
         android:text="GAME OVER"
         android:textAppearance="@android:style/TextAppearance.Large"/>
+
     <Button
+        android:id="@+id/buttonPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonPlay"
-        android:text="Try AGAIN"
-        />
+        android:onClick="onClick"
+        android:text="Try AGAIN" />
+
+    <Button
+        android:id="@+id/hsPlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="High Scores" />
 
 
 </LinearLayout>

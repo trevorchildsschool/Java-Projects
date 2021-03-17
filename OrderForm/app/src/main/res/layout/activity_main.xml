@@ -18,14 +18,14 @@
             android:id="@+id/imageView2"
             android:layout_width="372dp"
             android:layout_height="108dp"
-            app:srcCompat="@drawable/starbuckslogo" />
+            app:srcCompat="@drawable/dunkinlogo" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:text="Coffee"
+            android:text="Dunkin Donuts"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -39,14 +39,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="French Vanilla" />
+                android:text="Glazed" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Caramel" />
+                android:text="Sprinkles" />
 
         </LinearLayout>
 
@@ -60,7 +60,7 @@
                 android:id="@+id/radioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Iced"
+                android:text="Donut"
 
                 />
 
@@ -69,7 +69,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lineSpacingExtra="14sp"
-                android:text="Hot"
+                android:text="Donut Holes"
+                android:onClick=""
                 android:textAlignment="viewStart"
                 android:textSize="12sp" />
         </RadioGroup>
@@ -93,23 +94,22 @@
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="528dp"
-                app:srcCompat="@drawable/starbuckslogolarge" />
+                app:srcCompat="@drawable/dunkinad" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:padding="15dp"
-                >
+                android:padding="15dp">
 
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Submit Order"
                     android:onClick="onButtonClick"
-                    app:backgroundTint="#4CAF50" />
+                    android:text="Submit Order"
+                    app:backgroundTint="#A04CAF" />
             </LinearLayout>
 
         </FrameLayout>

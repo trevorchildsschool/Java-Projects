@@ -1,10 +1,14 @@
 <resources>
     <string name="app_name">OrderForm</string>
     <string-array name="Coffee">
-        <item>Cappuccino</item>
-        <item>Latte</item>
-        <item>Flat White</item>
-        <item>Irish Coffee</item>
+        <item>Powdered</item>
+        <item>Chocolate</item>
+        <item>Blueberry</item>
+        <item>Double Chocolate</item>
+    </string-array>
+    <string-array name="DonutHoles">
+        <item>Powdered</item>
+        <item>Chocolate</item>
     </string-array>
     
     
