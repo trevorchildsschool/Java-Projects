@@ -3,11 +3,14 @@ package com.example.wackamonkey;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -17,13 +20,13 @@ import java.util.Random;
 
 
 public class Game extends AppCompatActivity implements View.OnClickListener{
-
+    Bundle bun;
     ArrayList<Integer> myButtonIDs = new ArrayList<>();
 
     protected Handler taskHandler = new Handler();
 
     protected Boolean isComplete = false;
-    Button currentMole;
+    ImageButton currentMole;
 
     long startTime = System.currentTimeMillis();
     int score = 0;
@@ -39,9 +42,44 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
         initButtons();
         setNewMole(); //set one mole as current
         setTimer(difficultyLevel*1000);
-
+/*        bun = getIntent().getExtras();
+        playername = bun.getString("name");
+        difficultyLevel = bun.getInt("difficulty");
+        numMoles = bun.getInt("numMoles");
+        duration = bun.getInt("duration");
+*/
+        SharedPreferences prefs = getSharedPreferences("WhackSettings",MODE_PRIVATE);
+        LinearLayout layout = (LinearLayout)findViewById(R.id.gameLayout);
+        playername = prefs.getString("name", "Default");
+        difficultyLevel = prefs.getInt("difficulty",1);
+        numMoles = prefs.getInt("nummoles",8);
+        duration = prefs.getInt("duration",20);
+        initButtons();
+        setNewMole();
+        setTimer(difficultyLevel*1000);
+        if(difficultyLevel == 1){
+            layout.setBackgroundResource(R.drawable.monkehard);
+        }
+        else if(difficultyLevel == 2){
+            layout.setBackgroundResource(R.drawable.monkegamebg);
+        }
+        else{
+            layout.setBackgroundResource(R.drawable.monkeeasybg);
+        }
     }
+    public void setNewMole(){
+        Random generator = new Random();
+        int randomItem = generator.nextInt(numMoles);
 
+        int newButtonId = myButtonIDs.get(randomItem);
+
+        if(currentMole!=null){
+            currentMole.setVisibility(View.INVISIBLE);
+        }
+        ImageButton newMole = (ImageButton)findViewById(newButtonId);
+        newMole.setVisibility(View.VISIBLE);
+        currentMole=newMole;
+    }
     @Override
     public void onClick(View v)
     {
@@ -71,19 +109,7 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
         finish();
     }
 
-    public void setNewMole(){
-        Random generator = new Random();
-        int randomItem = generator.nextInt(numMoles);
 
-        int newButtonId = myButtonIDs.get(randomItem);
-
-        if(currentMole!=null){
-            currentMole.setVisibility(View.INVISIBLE);
-        }
-        Button newMole = (Button)findViewById(newButtonId);
-        newMole.setVisibility(View.VISIBLE);
-        currentMole=newMole;
-    }
 
     public void initButtons(){
         ViewGroup group = (ViewGroup)findViewById(R.id.gameLayout);
@@ -91,7 +117,7 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
         //loop controls and find buttons
         for(int i = 0; i < group.getChildCount();i++){
             v = group.getChildAt(i);
-            if(v instanceof Button){
+            if(v instanceof ImageButton){
                 v.setOnClickListener(this); // set onclick listener
                 //if game not over
                 if(isComplete==false){
@@ -132,13 +158,5 @@ public class Game extends AppCompatActivity implements View.OnClickListener{
         else{
             gameOver();
         }
-
-
     }
-
-
-
-
-
-
 }

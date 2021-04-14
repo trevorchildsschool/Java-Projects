@@ -1,23 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Settings">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="30dp" />
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="PLAYER NAME"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
-    <Spinner
-        android:id="@+id/spinner"
+    <EditText
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="159dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginBottom="10dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="NUMBER OF MONKEYS"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/spMoles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="DIFFICULTY"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+                >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            >
+
+        </LinearLayout>
+        <RadioButton
+            android:id="@+id/rbEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            android:checked="true"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/rbNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+            android:id="@+id/rnHard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hard"
+            android:textAlignment="textStart" />
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick"
+        android:text="Duration of game: "></TextView>
+    <SeekBar
+        android:id="@+id/sbDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="30"
+        android:max="60"></SeekBar>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="DONE"
+        app:backgroundTint="#0CBA00" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/monkesettings"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

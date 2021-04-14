@@ -31,16 +31,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_weight=".2"
+        android:onClick="onClick"
         android:text="PLAY"
-        app:backgroundTint="#0CB600"
-        android:layout_weight=".2"/>
+        app:backgroundTint="#0CB600" />
 
     <Button
         android:id="@+id/settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="SETTINGS"
         android:layout_weight=".2"
+        android:onClick="onClick"
+        android:text="SETTINGS"
         app:backgroundTint="#006F8A" />
+
 </LinearLayout>

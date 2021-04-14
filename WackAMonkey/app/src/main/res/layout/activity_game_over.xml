@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#99FF0000"
     android:orientation="vertical"
-    tools:context=".GameOver">
+    tools:context=".GameOver"
+    android:padding="20dp"
+    >
 
     <TextView
         android:id="@+id/tvmessage"
@@ -14,32 +17,42 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:gravity="center"
-        android:text="You hit times."
-        android:textAppearance="@android:style/TextAppearance.Large"/>
+        android:text="SCORE"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="#237305"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tvGameOver"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvGameOver"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="55dp"
         android:gravity="center"
         android:text="GAME OVER"
-        android:textAppearance="@android:style/TextAppearance.Large"/>
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="#FF0000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/buttonPlay"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:onClick="onClick"
-        android:text="Try AGAIN" />
+        android:text="TRY AGAIN (return to monke)"
+        app:backgroundTint="#02AC1E" />
 
     <Button
         android:id="@+id/hsPlayButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:onClick="onClick"
-        android:text="High Scores" />
+        android:text="High Scores"
+        app:backgroundTint="#0099FF" />
 
 
 </LinearLayout>
